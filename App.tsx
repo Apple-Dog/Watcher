@@ -41,9 +41,12 @@ export default function App() {
     <>
       <StatusBar style="auto" />
       <SafeAreaView style={styles.appContainer}>
+        <View style={styles.buttonContainer}>
         <TouchableOpacity style={styles.buttonStyle} onPress={startAddGoalHandler}>
           <Text style={styles.buttonText}>Add Goal</Text>
         </TouchableOpacity>
+
+        </View>
         <GoalInput visible={modalIsVisible} onAddGoal={addGoalHandler} onCancel={endAddGoalHandler} />
         <View style={styles.goalsContainer}>
           <FlatList data={courseGoals} renderItem={(itemData) => {
@@ -70,7 +73,14 @@ const styles = StyleSheet.create({
   goalsContainer: {
     flex: 5,
     backgroundColor: "#000000",
+    borderTopWidth : 1,
+    borderColor : "#979797",
     marginTop: 40,
+    paddingTop : 12,
+  },
+
+  buttonContainer : {
+    paddingTop : 25,
   },
 
   buttonStyle: {
