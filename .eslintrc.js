@@ -3,6 +3,5 @@ module.exports = {
   extends: "@react-native-community",
   rules: {
     quotes: ["error", "double", "single"],
-    "prettier/prettier" : "off",
   },
 };

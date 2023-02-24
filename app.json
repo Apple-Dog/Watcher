@@ -1,4 +1,5 @@
 {
   "name": "Watcher",
-  "displayName": "Watcher"
+  "displayName": "Watcher",
+  "backgroundColor" : "#000000"
 }
